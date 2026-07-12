@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Live API</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">EduPortal</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Grades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to the Student Portal</h1>
+            <p>Your one-stop destination to track your courses, grades, and profile details seamlessly!</p>
+            <button>Explore Courses</button>
+        </section>
+
+        <section id="notifications" style="padding: 20px; background: #fff; margin: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <h2>Live API Notifications</h2>
+            
+            <div id="loading-spinner" style="display: none; color: #1abc9c; font-weight: bold;">Loading live data...</div>
+            <div id="error-message" style="display: none; color: red; margin-top: 10px;"></div>
+            
+            <button id="retry-btn" style="display: none; margin-top: 10px; padding: 8px 16px; background-color: #e74c3c; color: white; border: none; border-radius: 4px; cursor: pointer;">Retry Connection</button>
+            <button onclick="testBadUrl()" style="margin-top: 10px; padding: 8px 16px; background-color: #f39c12; color: white; border: none; border-radius: 4px; cursor: pointer;">Simulate 404 Error</button>
+            
+            <ul id="notification-list" style="margin-top: 15px; list-style-type: none; padding: 0;"></ul>
+        </section>
+
+        <section id="courses">
+            <h2>Enrolled Courses</h2>
+            <div id="course-loading" style="color: #2563eb; font-weight: bold; margin-bottom: 10px;">Loading your courses securely...</div>
+            <div class="course-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Portal. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
