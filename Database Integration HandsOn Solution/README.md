@@ -1,14 +1,14 @@
 # Digital Nurture 5.0 — Module 3: Database Integration
-### Python Full Stack Engineer Track — Hands-On Exercise Book (Output Log)
+### Python Full Stack Engineer Track — Hands-On Exercise 
 
-This README documents the completed work for all **7 Hands-On exercises** of Module 3 (Database Integration), covering **PostgreSQL, MySQL, and MongoDB**. It follows the single scenario used throughout the book — a **Student Course Registration System (`college_db`)** — and includes the output screenshots captured for each exercise.
+This README documents the completed work for all **7 Hands-On exercises** of Module 3 (Database Integration), covering **PostgreSQL, MySQL, and MongoDB**. It follows the single scenario used throughout the book — a **Student Course Registration System (`college_db`)** 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-Module3_DatabaseIntegration/<YourName>/
+Module3_DatabaseIntegration
 ├── hands_on_1.sql   (Schema Design & DDL)
 ├── hands_on_2.sql   (DML, Joins & Aggregations)
 ├── hands_on_3.sql   (Subqueries, Views & Transactions)
@@ -18,16 +18,9 @@ Module3_DatabaseIntegration/<YourName>/
 └── migrations/      (Alembic migration scripts)
 ```
 
-## 🧰 Tools Used
+## Tools Used
 PostgreSQL · MySQL Community Server 8.x · MongoDB Community Server + Compass · Python 3.10+ · VS Code · `psycopg2-binary` · `mysql-connector-python` · `pymongo` · `sqlalchemy` · `flask-sqlalchemy` · Alembic
 
-## 📊 Difficulty Guide
-
-| Level | Hands-On | Focus |
-|---|---|---|
-| Beginner | 1, 2 | Core SQL, schema design, basic CRUD |
-| Intermediate | 3, 4, 5 | Advanced queries, MongoDB, optimisation |
-| Advanced | 6, 7 | ORM integration, migrations, Python backend |
 
 ## 🎓 Common Scenario: Student Course Registration System
 
@@ -35,7 +28,7 @@ A college digitising its Course Registration process. The relational schema (`co
 
 ---
 
-## Hands-On 1 — Schema Design & Core SQL: DDL and Normalisation *(Beginner)*
+## Hands-On 1 — Schema Design & Core SQL: DDL and Normalisation 
 
 **Topics:** Database Schema Design · Normalisation (1NF–3NF) · ER Relationships · DDL — `CREATE` / `ALTER` / `DROP` · Referential Integrity
 
@@ -45,12 +38,14 @@ Created the full `college_db` schema from scratch: `CREATE TABLE` statements for
 
 **Output Screenshots:**
 
-![Hands-On 1 — Task 1: DDL / CREATE TABLE](screenshots/handson01_task1_ddl_create.png)
-![Hands-On 1 — Task 3: ALTER TABLE](screenshots/handson01_task3_alter_table.png)
+<img width="975" height="519" alt="image" src="https://github.com/user-attachments/assets/ad993e3b-4cf1-4b55-9aee-c16a4f5472e6" />
+
+<img width="975" height="522" alt="image" src="https://github.com/user-attachments/assets/21bf22b2-db27-4564-8d3c-de218a2b5ec3" />
+
 
 ---
 
-## Hands-On 2 — Writing SQL Queries: DML, Joins & Aggregations *(Beginner)*
+## Hands-On 2 — Writing SQL Queries: DML, Joins & Aggregations 
 
 **Topics:** DML — `INSERT` / `UPDATE` / `DELETE` · `SELECT` with `WHERE` / `ORDER BY` · `INNER JOIN`, `LEFT JOIN`, multi-table joins · Aggregate Functions (`COUNT`, `AVG`, `SUM`, `MAX`) · `GROUP BY` and `HAVING`
 
@@ -60,14 +55,17 @@ Populated `college_db` with the sample data, added two extra students, updated a
 
 **Output Screenshots:**
 
-![Hands-On 2 — Task 1: DML (Insert/Update/Delete)](screenshots/handson02_task1_dml.png)
-![Hands-On 2 — Task 2: Filtering with WHERE/ORDER BY/LIKE](screenshots/handson02_task2_filtering.png)
-![Hands-On 2 — Task 3: Multi-Table Joins](screenshots/handson02_task3_joins.png)
-![Hands-On 2 — Task 4: Aggregations & GROUP BY/HAVING](screenshots/handson02_task4_aggregations.png)
+<img width="975" height="514" alt="image" src="https://github.com/user-attachments/assets/9b5d0d25-a03d-4859-b2a9-f42feb890c5b" />
+
+<img width="975" height="520" alt="image" src="https://github.com/user-attachments/assets/825547ce-2659-425c-8a08-c247171ecac7" />
+
+<img width="975" height="517" alt="image" src="https://github.com/user-attachments/assets/6d15549b-e30b-41b0-a14e-5a22408708a7" />
+
+<img width="975" height="517" alt="image" src="https://github.com/user-attachments/assets/b8c3eb2d-01bd-4d0a-9554-d44112f6ddbe" />
 
 ---
 
-## Hands-On 3 — Advanced SQL: Subqueries, Views & Transactions *(Intermediate)*
+## Hands-On 3 — Advanced SQL: Subqueries, Views & Transactions 
 
 **Topics:** Subqueries (correlated & non-correlated) · Views — creation, usage, updatable views · Stored Procedures (MySQL) / Functions (PostgreSQL) · Transactions — `COMMIT`, `ROLLBACK`, `SAVEPOINT` · Indexes and Query Plans
 
@@ -77,13 +75,15 @@ Used non-correlated subqueries (students enrolled above the average), correlated
 
 **Output Screenshots:**
 
-![Hands-On 3 — Task 1: Subqueries](screenshots/handson03_task1_subqueries.png)
-![Hands-On 3 — Task 2: Views](screenshots/handson03_task2_views.png)
-![Hands-On 3 — Task 3: Stored Procedures & Transactions](screenshots/handson03_task3_procedures_transactions.png)
+<img width="975" height="523" alt="image" src="https://github.com/user-attachments/assets/cf38faa2-782b-4f0d-a938-b4823e1d5fab" />
+
+<img width="975" height="517" alt="image" src="https://github.com/user-attachments/assets/3b801774-453a-4069-a0c2-6af198069b21" />
+
+<img width="975" height="522" alt="image" src="https://github.com/user-attachments/assets/69a4bd39-b2b6-4260-b74f-a5f341b8d90a" />
 
 ---
 
-## Hands-On 4 — Query Optimisation: Indexes, EXPLAIN & the N+1 Problem *(Intermediate)*
+## Hands-On 4 — Query Optimisation: Indexes, EXPLAIN & the N+1 Problem 
 
 **Topics:** Index Types — B-Tree, Composite, Partial · `EXPLAIN` / `EXPLAIN ANALYZE` · Query Plans — Seq Scan vs Index Scan · N+1 Query Problem · Connection Pooling (concept)
 
@@ -93,13 +93,15 @@ Captured a baseline `EXPLAIN`/`EXPLAIN FORMAT=JSON` plan on a 3-table join query
 
 **Output Screenshots:**
 
-![Hands-On 4 — Task 1: Baseline EXPLAIN Plan](screenshots/handson04_task1_baseline_explain.png)
-![Hands-On 4 — Task 2: Indexes & Query Plan Comparison](screenshots/handson04_task2_indexes.png)
-![Hands-On 4 — Task 3: N+1 Problem — Before/After](screenshots/handson04_task3_n_plus_1.png)
+<img width="975" height="519" alt="image" src="https://github.com/user-attachments/assets/7934590e-7477-4bd8-bdca-4d5dfd56efc3" />
+
+<img width="975" height="523" alt="image" src="https://github.com/user-attachments/assets/882565a9-cc6c-4d48-9186-c06848cb67a0" />
+
+<img width="975" height="498" alt="image" src="https://github.com/user-attachments/assets/b986f244-c2a4-4460-80e9-e8fe0fddfbf3" />
 
 ---
 
-## Hands-On 5 — MongoDB: Document Modelling, CRUD & Aggregation *(Intermediate)*
+## Hands-On 5 — MongoDB: Document Modelling, CRUD & Aggregation 
 
 **Topics:** Documents & Collections · BSON Types · CRUD Operations · Aggregation Pipeline · Indexes in MongoDB · Embedding vs Referencing
 
@@ -109,13 +111,16 @@ Modelled a `college_nosql.feedback` collection (course feedback: ratings, commen
 
 **Output Screenshots:**
 
-![Hands-On 5 — Task 1: Collection & Document Inserts](screenshots/handson05_task1_mongo_insert.png)
-![Hands-On 5 — Task 2: CRUD Operations](screenshots/handson05_task2_mongo_crud.png)
-![Hands-On 5 — Task 3: Aggregation Pipeline](screenshots/handson05_task3_aggregation_pipeline.png)
+<img width="607" height="491" alt="image" src="https://github.com/user-attachments/assets/a626e3e4-3f83-4f34-aacc-6ea2dc655b63" />
+
+<img width="609" height="494" alt="image" src="https://github.com/user-attachments/assets/a247da02-292f-4e33-9f35-88b22f05ca42" />
+
+<img width="623" height="504" alt="image" src="https://github.com/user-attachments/assets/d277e4f1-0a88-46de-b759-bfd5a26062ab" />
+
 
 ---
 
-## Hands-On 6 — ORM Integration: SQLAlchemy & Django ORM *(Advanced)*
+## Hands-On 6 — ORM Integration: SQLAlchemy & Django ORM 
 
 **Topics:** SQLAlchemy Core & ORM · Django ORM (models, queries) · Defining Models and Relationships · CRUD via ORM · Sessions and Connection Pooling · Avoiding N+1 with `joinedload` / `select_related`
 
@@ -125,14 +130,17 @@ Defined `Department`, `Student`, `Course`, `Enrollment`, and `Professor` ORM mod
 
 **Output Screenshots:**
 
-![Hands-On 6 — Task 1: SQLAlchemy Models & Engine (1)](screenshots/handson06_task1_sqlalchemy_models_1.png)
-![Hands-On 6 — Task 1: SQLAlchemy Models & Engine (2)](screenshots/handson06_task1_sqlalchemy_models_2.png)
-![Hands-On 6 — Task 2: CRUD via ORM Session](screenshots/handson06_task2_orm_crud.png)
-![Hands-On 6 — Task 3: Eager Loading (joinedload) Fixing N+1](screenshots/handson06_task3_eager_loading.png)
+<img width="975" height="792" alt="image" src="https://github.com/user-attachments/assets/80e2e211-7f72-4b28-8177-7a081053729e" />
+
+<img width="975" height="772" alt="image" src="https://github.com/user-attachments/assets/aef4f94d-c758-4661-9bc3-8721536213c5" />
+
+<img width="674" height="552" alt="image" src="https://github.com/user-attachments/assets/e49a5d35-dec7-4ef1-991c-bbe75014b269" />
+
+<img width="667" height="548" alt="image" src="https://github.com/user-attachments/assets/a5154d12-eef2-4bb0-a7d5-386b5f60a8c3" />
 
 ---
 
-## Hands-On 7 — Migrations & Versioning: Alembic and Django Migrations *(Advanced)*
+## Hands-On 7 — Migrations & Versioning: Alembic and Django Migrations 
 
 **Topics:** Migration Concepts · Alembic for SQLAlchemy · Django Migrations · Migration History and Version Control · Rollback Strategies
 
@@ -142,14 +150,13 @@ Initialised Alembic (`alembic init migrations`), pointed it at `college_db_orm`,
 
 **Output Screenshots:**
 
-![Hands-On 7 — Task 1: Alembic Init & Baseline Migration](screenshots/handson07_task1_alembic_baseline.png)
-![Hands-On 7 — Task 3: Rollback & Recovery](screenshots/handson07_task3_rollback_recovery.png)
+<img width="603" height="488" alt="image" src="https://github.com/user-attachments/assets/99bff59f-2bc1-44e8-922e-b6fd42317fda" />
 
-*(No separate screenshot was captured for Task 2 — Incremental Migrations; the `is_active` column and `course_schedules` table additions were verified directly against the applied migration chain shown in Tasks 1 and 3.)*
+<img width="702" height="569" alt="image" src="https://github.com/user-attachments/assets/6009d62b-5062-4b81-adea-d47b7d2f70a1" />
 
 ---
 
-## ✅ Summary
+## Summary
 
 | Hands-On | Topic | Technology |
 |---|---|---|
@@ -161,4 +168,4 @@ Initialised Alembic (`alembic init migrations`), pointed it at `college_db_orm`,
 | 6 | ORM Integration | SQLAlchemy (Python) |
 | 7 | Migrations & Versioning | Alembic / Django Migrations |
 
-*Submitted under: `Module3_DatabaseIntegration/<YourName>/` — Digital Nurture 5.0, Python Full Stack Engineer Track.*
+## Submitted By : KALIKIRI VAISHNAVI
