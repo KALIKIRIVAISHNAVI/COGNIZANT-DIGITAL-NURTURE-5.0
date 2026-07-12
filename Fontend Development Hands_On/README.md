@@ -1,11 +1,11 @@
 # Digital Nurture 5.0 — Module 2: Frontend Development
 ### Python Full Stack Engineer Track — Hands-On Exercise Book (Output Log)
 
-This README documents the completed work for all **10 Hands-On exercises** of Module 2 (Frontend Development), covering **HTML5, CSS3, JavaScript, React, Angular, and Vue.js**. It follows the single running project used throughout the book — the **Student Portal web application** — and includes the output screenshots captured for each exercise.
+This README documents the completed work for all **10 Hands-On exercises** of Module 2 (Frontend Development), covering **HTML5, CSS3, JavaScript, React, Angular, and Vue.js**. It follows the single running project used throughout the book — the **Student Portal web application** 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Module2_FrontendDev/<YourName>/
@@ -21,18 +21,11 @@ Module2_FrontendDev/<YourName>/
 └── handson_10/   (Advanced State Management)
 ```
 
-## 🧰 Tools Used
+## Tools Used
 VS Code · Node.js (LTS) + npm · Git · Chrome/Firefox DevTools · CodePen / CodeSandbox / StackBlitz · Vue SFC Playground · Angular on StackBlitz
 
-## 📊 Difficulty Guide
 
-| Level | Hands-On | Focus |
-|---|---|---|
-| Beginner | 1, 2, 3 | HTML5 structure, CSS3 layouts, Responsive design |
-| Intermediate | 4, 5, 6 | Async JS, Fetch API, React components & hooks |
-| Advanced | 7, 8, 9, 10 | Angular, Vue.js, Accessibility, State management |
-
-## 🎓 Common Scenario: Student Portal
+## Common Scenario: Student Portal
 
 | Page / Section | Built In | Key Elements |
 |---|---|---|
@@ -48,7 +41,7 @@ VS Code · Node.js (LTS) + npm · Git · Chrome/Firefox DevTools · CodePen / Co
 
 ---
 
-## Hands-On 1 — HTML5 Semantic Structure & CSS3 Foundations *(Beginner)*
+## Hands-On 1 — HTML5 Semantic Structure & CSS3 Foundations 
 
 **Topics:** HTML5 Semantic Elements · CSS3 Selectors & Specificity · CSS Box Model · Typography & Spacing · Basic Page Layout
 
@@ -58,11 +51,11 @@ Built the structural skeleton of the Student Portal (`<header>`, `<main>`, `<sec
 
 **Output Screenshot:**
 
-![Hands-On 1 Output](screenshots/handson01_semantic_html_css.png)
+<img width="975" height="489" alt="image" src="https://github.com/user-attachments/assets/e1dc173e-be16-4749-98f6-d494044be3e2" />
 
 ---
 
-## Hands-On 2 — CSS Flexbox, Grid & Responsive Design *(Beginner)*
+## Hands-On 2 — CSS Flexbox, Grid & Responsive Design 
 
 **Topics:** CSS Flexbox · CSS Grid · Mobile-First Design · Media Queries · Viewport Units & Fluid Layouts
 
@@ -70,11 +63,14 @@ Refactored the header/nav/hero with Flexbox, built a responsive `.course-grid` w
 
 **Expected Outcome:** Layout verified correct at 375px (mobile, single column), 768px (tablet, 2-column), and 1280px (desktop, 3-column, full nav).
 
-**Output Screenshot:** *(No separate screenshot captured for this hands-on — responsive behavior was verified live in DevTools' device toolbar across breakpoints.)*
+**Output Screenshot:** 
+
+<img width="975" height="489" alt="image" src="https://github.com/user-attachments/assets/619b4266-b888-4ec4-832c-65eb9cde4228" />
+
 
 ---
 
-## Hands-On 3 — JavaScript ES6+ & DOM Manipulation *(Beginner)*
+## Hands-On 3 — JavaScript ES6+ & DOM Manipulation 
 
 **Topics:** `let` / `const` / `var` · Arrow Functions & Template Literals · Array Methods (`map`, `filter`, `reduce`) · DOM Selection & Modification · Event Listeners · ES6 Modules
 
@@ -84,11 +80,13 @@ Practiced ES6+ syntax (destructuring, template literals, `map`/`filter`/`reduce`
 
 **Output Screenshot:**
 
-![Hands-On 3 Output](screenshots/handson03_js_dom_render.png)
+<img width="975" height="489" alt="image" src="https://github.com/user-attachments/assets/e08a76de-d8f9-44cd-a6af-db775f5ecfad" />
+<img width="975" height="491" alt="image" src="https://github.com/user-attachments/assets/61526c47-c1c9-42b5-9d26-09f627982d40" />
+
 
 ---
 
-## Hands-On 4 — Async JavaScript, Fetch API & API Integration *(Intermediate)*
+## Hands-On 4 — Async JavaScript, Fetch API & API Integration 
 
 **Topics:** Promises & `async`/`await` · Fetch API · Error Handling (`try`/`catch`) · Loading States · Axios (introduction) · Dynamic DOM from API Data
 
@@ -98,14 +96,14 @@ Used the **JSONPlaceholder API** to fetch live data. Built `fetchUser()` with bo
 
 **Output Screenshots:**
 
-![Hands-On 4 — Promises & Async/Await (1)](screenshots/handson04_promises_asyncawait_1.png)
-![Hands-On 4 — Promises & Async/Await (2)](screenshots/handson04_promises_asyncawait_2.png)
-![Hands-On 4 — Loading State](screenshots/handson04_fetch_loading_state.png)
-![Hands-On 4 — Fetch Error Handling & Retry](screenshots/handson04_fetch_error_handling.png)
+<img width="975" height="442" alt="image" src="https://github.com/user-attachments/assets/7c1a5151-8ced-476b-9666-506a5cf78fc4" />
+
+<img width="975" height="491" alt="image" src="https://github.com/user-attachments/assets/5bfceb75-64ae-4601-ae53-692c16ee2936" />
+
 
 ---
 
-## Hands-On 5 — React Fundamentals: Components, Props, State & Hooks *(Intermediate)*
+## Hands-On 5 — React Fundamentals: Components, Props, State & Hooks 
 
 **Topics:** JSX Syntax · Functional Components · Props & Prop Types · `useState` Hook · `useEffect` Hook · Conditional Rendering & Lists
 
@@ -115,12 +113,16 @@ Scaffolded the project with **Vite + React**, built `Header.jsx`, `Footer.jsx`, 
 
 **Output Screenshots:**
 
-![Hands-On 5 — Project Setup & Components (Task 1)](screenshots/handson05_react_setup_task1.png)
-![Hands-On 5 — useState & Dynamic Lists (Task 2)](screenshots/handson05_react_state_task2.png)
+<img width="975" height="492" alt="image" src="https://github.com/user-attachments/assets/6e8af1c2-40b3-451a-905a-9eec6acdd19d" />
+
+<img width="975" height="498" alt="image" src="https://github.com/user-attachments/assets/e6dc1f40-9e44-4918-9372-fbb0cd0b8901" />
+
+<img width="975" height="492" alt="image" src="https://github.com/user-attachments/assets/6229574d-1f21-4b07-9936-7e5e34082506" />
+
 
 ---
 
-## Hands-On 6 — React Routing & State Management *(Intermediate)*
+## Hands-On 6 — React Routing & State Management 
 
 **Topics:** React Router v6 · `useNavigate` & `useParams` · `useContext` Hook · Context API for Global State · Introduction to Redux Toolkit
 
@@ -130,14 +132,15 @@ Added **React Router** (`/`, `/courses`, `/profile`, `/courses/:courseId`) with 
 
 **Output Screenshots:**
 
-![Hands-On 6 — React Router (Task 1)](screenshots/handson06_router_task1.png)
-![Hands-On 6 — Context API (1)](screenshots/handson06_context_api_1.png)
-![Hands-On 6 — Context API (2)](screenshots/handson06_context_api_2.png)
-![Hands-On 6 — Redux Toolkit](screenshots/handson06_redux_toolkit.png)
+<img width="755" height="386" alt="image" src="https://github.com/user-attachments/assets/6903421e-7c73-4e5d-9a45-91af0a0e6886" />
+<img width="745" height="379" alt="image" src="https://github.com/user-attachments/assets/efed29c5-095e-476f-9c02-5e6d748e3594" />
+<img width="756" height="382" alt="image" src="https://github.com/user-attachments/assets/f418f7f5-2d27-43f9-be1c-c897bb60d6d8" />
+<img width="975" height="494" alt="image" src="https://github.com/user-attachments/assets/c4de8b2d-8e24-4957-9a48-8072d45b1d9d" />
+<img width="975" height="495" alt="image" src="https://github.com/user-attachments/assets/90eb46b0-54ba-4671-bf19-4fb1ab4e901e" />
 
 ---
 
-## Hands-On 7 — Angular: Components, Services, DI, Routing & Forms *(Advanced)*
+## Hands-On 7 — Angular: Components, Services, DI, Routing & Forms 
 
 **Topics:** Angular CLI · Components & Modules · Services & Dependency Injection · RxJS & `HttpClient` · Angular Router · Reactive Forms
 
@@ -147,15 +150,13 @@ Generated `HeaderComponent`, `CourseListComponent`, `CourseCardComponent`, and `
 
 **Output Screenshots:**
 
-![Hands-On 7 — Angular Components & Data Binding (1)](screenshots/handson07_angular_components_1.png)
-![Hands-On 7 — Angular Components & Data Binding (2)](screenshots/handson07_angular_components_2.png)
-![Hands-On 7 — Services & Dependency Injection](screenshots/handson07_angular_service_di.png)
-![Hands-On 7 — Routing & Reactive Forms (1)](screenshots/handson07_angular_routing_forms_1.png)
-![Hands-On 7 — Routing & Reactive Forms (2)](screenshots/handson07_angular_routing_forms_2.png)
+<img width="975" height="494" alt="image" src="https://github.com/user-attachments/assets/3704f147-464a-4775-a1cf-705e9a009031" />
+<img width="975" height="280" alt="image" src="https://github.com/user-attachments/assets/a8d73649-86d0-4b3e-adfb-2612728655a0" />
+<img width="975" height="289" alt="image" src="https://github.com/user-attachments/assets/7e2fc95a-c380-4491-82b0-b5880660e9c6" />
 
 ---
 
-## Hands-On 8 — Vue.js: Composition API, Vue Router & Pinia *(Advanced)*
+## Hands-On 8 — Vue.js: Composition API, Vue Router & Pinia 
 
 **Topics:** Vue 3 Template Syntax · Reactivity (`ref`, `reactive`) · Components & Props · Composition API (`setup`) · Vue Router · Pinia State Management
 
@@ -165,13 +166,15 @@ Built `CourseCard.vue` and `Header.vue` as Single File Components using `<script
 
 **Output Screenshots:**
 
-![Hands-On 8 — Vue Components & Reactivity](screenshots/handson08_vue_components.png)
-![Hands-On 8 — Vue Router](screenshots/handson08_vue_router.png)
-![Hands-On 8 — Pinia State Management](screenshots/handson08_vue_pinia.png)
+<img width="975" height="411" alt="image" src="https://github.com/user-attachments/assets/dede8d9c-71d5-46a1-9608-6766209d61f1" />
+<img width="975" height="181" alt="image" src="https://github.com/user-attachments/assets/6c75be1a-0705-4bcb-8893-f2bc4978d133" />
+<img width="975" height="422" alt="image" src="https://github.com/user-attachments/assets/14b27b40-a650-49ba-8329-83a41f789d7b" />
+<img width="975" height="384" alt="image" src="https://github.com/user-attachments/assets/e1b5708b-6999-4b10-a734-9dfe886ed2f5" />
+
 
 ---
 
-## Hands-On 9 — Web Accessibility (a11y) & Cross-Browser Compatibility *(Advanced)*
+## Hands-On 9 — Web Accessibility (a11y) & Cross-Browser Compatibility 
 
 **Topics:** WCAG 2.1 Guidelines · ARIA Attributes · Semantic HTML for Accessibility · Keyboard Navigation · Colour Contrast · Feature Detection & Polyfills · Cross-Browser Testing Tools
 
@@ -181,15 +184,14 @@ Ran a **Lighthouse** accessibility audit on the Student Portal, then fixed missi
 
 **Output Screenshots:**
 
-![Hands-On 9 — Accessibility Audit](screenshots/handson09_a11y_audit.png)
-![Hands-On 9 — ARIA & Keyboard Navigation](screenshots/handson09_aria_keyboard_nav.png)
-![Hands-On 9 — Colour Contrast Check (1)](screenshots/handson09_color_contrast_1.png)
-![Hands-On 9 — Colour Contrast Check (2)](screenshots/handson09_color_contrast_2.png)
-![Hands-On 9 — Cross-Browser Testing](screenshots/handson09_crossbrowser_test.png)
+<img width="975" height="491" alt="image" src="https://github.com/user-attachments/assets/634a7873-877f-4f0d-809f-5173c971400d" />
+<img width="975" height="433" alt="image" src="https://github.com/user-attachments/assets/7b84f928-7ee4-46aa-b83d-76baed0ff8ed" />
+<img width="975" height="441" alt="image" src="https://github.com/user-attachments/assets/7d82e663-e8db-46ae-9fc9-53c50c50658a" />
+<img width="625" height="975" alt="image" src="https://github.com/user-attachments/assets/0422d0f5-b719-4e0c-8073-a3b22cfe541b" />
 
 ---
 
-## Hands-On 10 — API Integration & Advanced State Management *(Advanced)*
+## Hands-On 10 — API Integration & Advanced State Management 
 
 **Topics:** Fetch API vs Axios (comparison) · Centralised API Layer · Redux Toolkit (advanced — `createAsyncThunk`) · NgRx (Angular) · Pinia (Vue) — Advanced Patterns · Error Boundaries & Global Error Handling
 
@@ -199,9 +201,9 @@ Built a centralised `apiClient.js` (single Axios instance with `baseURL`, header
 
 **Output Screenshots:**
 
-![Hands-On 10 — Centralised API Layer](screenshots/handson10_api_layer.png)
-![Hands-On 10 — Redux Toolkit Async Thunk](screenshots/handson10_redux_thunk.png)
-![Hands-On 10 — NgRx / Pinia Advanced Patterns](screenshots/handson10_ngrx_pinia_advanced.png)
+<img width="975" height="494" alt="image" src="https://github.com/user-attachments/assets/eefc62aa-ce5f-42f1-a9db-95d6a7c037e9" />
+<img width="975" height="313" alt="image" src="https://github.com/user-attachments/assets/81740834-786a-4508-9750-58fb04be5ba5" />
+<img width="975" height="203" alt="image" src="https://github.com/user-attachments/assets/6419b967-60a4-4128-a8f3-b50674294d61" />
 
 ---
 
@@ -220,4 +222,4 @@ Built a centralised `apiClient.js` (single Axios instance with `baseURL`, header
 | 9 | Accessibility (a11y) & Cross-Browser Compatibility | HTML/CSS/JS |
 | 10 | Centralised API Layer & Advanced State Management | React/Angular/Vue |
 
-*Submitted under: `Module2_FrontendDev/<YourName>/` — Digital Nurture 5.0, Python Full Stack Engineer Track.*
+## Submitted By:  KALIKIRI VAISHNAVI  
