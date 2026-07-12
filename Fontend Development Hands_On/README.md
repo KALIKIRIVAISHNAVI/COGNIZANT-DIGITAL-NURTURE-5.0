@@ -8,7 +8,7 @@ This README documents the completed work for all **10 Hands-On exercises** of Mo
 ## Project Structure
 
 ```
-Module2_FrontendDev/<YourName>/
+Module2_FrontendDev
 ├── handson_01/   (HTML/CSS)
 ├── handson_02/   (CSS)
 ├── handson_03/   (JavaScript)
