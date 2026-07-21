@@ -20,30 +20,28 @@ pytest-html, Chrome/ChromeDriver.
 ## Repository Structure
 
 ```
-SeleniumBasics/<YourName>/
-├── written_exercises/
-│   ├── qa_concepts.md          # Hands-On 1
-│   ├── v_model_analysis.md     # Hands-On 2
-│   └── automation_strategy.md  # Hands-On 3
-├── automation_scripts/
-│   ├── HandsOn-4/
-│   │   ├── setup_test.py
-│   │   └── task2.py
-│   ├── HandsOn-5/
-│   │   ├── task1_locators.py
-│   │   └── task2_waits.py
-│   ├── HandsOn-6/
-│   │   ├── conftest.py
-│   │   └── test_playground.py
-│   └── HandsOn-7/
-│       ├── pages/
-│       │   ├── base_page.py
-│       │   ├── simple_form_page.py
-│       │   ├── checkbox_page.py
-│       │   ├── dropdown_page.py
-│       │   └── input_form_page.py
-│       └── tests/
-│           └── test_playground_pom.py
+Selenium
+├── qa_concepts.md          # Hands-On 1
+├── v_model_analysis.md     # Hands-On 2
+└── automation_strategy.md  # Hands-On 3
+├── HandsOn-4/
+│   ├── setup_test.py
+│   └── task2.py
+├── HandsOn-5/
+│   ├── task1_locators.py
+│   └── task2_waits.py
+├── HandsOn-6/
+│   ├── conftest.py
+│   └── test_playground.py
+└── HandsOn-7/
+├── pages/
+│   ├── base_page.py
+│   ├── simple_form_page.py
+│   ├── checkbox_page.py
+│   ├── dropdown_page.py
+│   └── input_form_page.py
+└── tests/
+│   └── test_playground_pom.py
 ├── requirements.txt
 └── README.md
 ```
