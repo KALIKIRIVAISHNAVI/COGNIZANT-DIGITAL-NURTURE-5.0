@@ -47,15 +47,6 @@ Selenium
 ```
 
 ---
-
-## Difficulty Guide
-
-| Level | Hands-On | What to Expect |
-|---|---|---|
-| Beginner | 1, 2 | QA concepts, defect lifecycle, SDLC vs TDLC |
-| Intermediate | 3, 4, 5 | Test automation theory, Selenium setup, locators |
-| Advanced | 6, 7 | Selenium waits, pytest integration, Page Object Model |
-
 ---
 
 ## Hands-On 1 — QA Concepts, Functional Testing & Defect Lifecycle
@@ -207,7 +198,8 @@ screenshots.
   `options.add_argument('--headless')` and confirmed the title still prints
   with no visible browser window.
 
-![Hands-On 4 Task 1 — setup_test.py running in VS Code](screenshots/ho4_t1_setup_test.png)
+<img width="975" height="519" alt="image" src="https://github.com/user-attachments/assets/ec1d461b-60c7-498f-8372-c285cecfb286" />
+
 *`setup_test.py` — Chrome driver auto-installed via `ChromeDriverManager().install()`, headless option applied, implicit wait set, and page title ("Selenium Grid Online | Run Selenium Test On Cloud") printed to the terminal.*
 
 ### Task 2 — WebDriver Navigation and Window Commands (`task2.py`)
@@ -224,10 +216,11 @@ screenshots.
   comments why a consistent viewport matters for responsive-UI automation
   (locators and layouts can shift at different breakpoints).
 
-![Hands-On 4 Task 2 — task2.py terminal output](screenshots/ho4_t2_task2_terminal.png)
+<img width="975" height="520" alt="image" src="https://github.com/user-attachments/assets/275b8d0f-14c0-4cfd-95f0-26d3ce9f76ff" />
 *`task2.py` — second tab opened and switched to, "Google" printed as the tab title, window size confirmed as `{'width': 1051, 'height': 798}` after `set_window_size`.*
 
-![Hands-On 4 Task 2 — Selenium Playground in browser](screenshots/ho4_t2_playground_browser.png)
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/c99c50ff-7a18-414c-aa9a-7dea5e7c28c1" />
+
 *Automated Chrome session (banner: "Chrome is being controlled by automated test software") on the Selenium Playground home page, listing all available practice components.*
 
 ---
@@ -253,7 +246,8 @@ conditions · implicit vs explicit vs fluent waits · avoiding hard-coded
 - Ranked all 6 strategies from most to least preferred, with justification
   based on uniqueness, brittleness to markup changes, and readability.
 
-![Hands-On 5 Task 1 — locator strategy results](screenshots/ho5_t1_locators_terminal.png)
+<img width="975" height="520" alt="image" src="https://github.com/user-attachments/assets/481b8234-549e-4e64-9b35-e1e26d9ce6f7" />
+
 *`task1_locators.py` — `By.ID` found (True), `By.NAME`/`By.CLASS_NAME` not present on this element (False), relative XPath found (True) while absolute XPath failed after a DOM change, CSS-by-ID and CSS-by-tag+id both found, `contains()` matched all 8 checkbox options, and the full preference ranking is printed: **1. ID → 2. Name → 3. CSS Selector → 4. Class Name → 5. Relative XPath → 6. Absolute XPath** (least preferred — it hardcodes the full DOM path and breaks on any structural change).*
 
 ### Task 2 — WebDriverWait and Expected Conditions (`task2_waits.py`)
@@ -269,13 +263,11 @@ conditions · implicit vs explicit vs fluent waits · avoiding hard-coded
   ignoring `NoSuchElementException` — to wait for a dynamically-loaded
   table row.
 
-![Hands-On 5 Task 2 — Bootstrap Alert Messages demo](screenshots/ho5_t2_bootstrap_alerts.png)
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/761a3392-2b57-4010-b7a8-9c9f5f5c7cac" />
+
 *Bootstrap Alerts page ("Autoclosable Success Message", "Normal Success Message", etc.) used to validate `visibility_of_element_located` and `element_to_be_clickable` waits against the live alert banner.*
 
-**Terminal evidence (also shown in Hands-On 6 Task 1 screenshot below, same script):**
-`time.sleep(3)` took **4.01s** vs the explicit wait's **1.28s** — a concrete
-demonstration that explicit waits proceed as soon as the condition is met
-instead of always burning the full sleep duration.
+<img width="975" height="517" alt="image" src="https://github.com/user-attachments/assets/aab07eeb-3c2f-4da4-a742-0c9e811a7993" />
 
 ---
 
@@ -303,11 +295,10 @@ screenshot-on-failure.
 - Verified with `pytest test_playground.py -v` that both tests pass with
   clean setup/teardown per test.
 
-![Hands-On 6 Task 1 — explicit wait timing comparison](screenshots/ho6_t1_waits_terminal.png)
+<img width="975" height="516" alt="image" src="https://github.com/user-attachments/assets/faf86910-f583-4e85-bda0-3c47895faa14" />
+
 *`task2_waits.py` output carried into this stage — Step 36: alert text confirms "successfully" (PASS). Step 37: `time.sleep(3)` (4.01s) vs explicit wait (1.28s). Step 38: element confirmed clickable before the click fires. Step 39: FluentWait correctly times out when no table row loads within 10s of 500ms polling.*
 
-![Hands-On 6 Task 1 — first pytest run](screenshots/ho6_t2_pytest_initial_run.png)
-*`pytest -v test_playground.py` — **2 passed** (`test_simple_form_submission`, `test_checkbox_interaction`), each run through the shared `driver` fixture from `conftest.py`.*
 
 ### Task 2 — Parameterisation, Reporting & Screenshot-on-Failure
 - Parameterised the form submission test with 3 values via
@@ -325,10 +316,12 @@ screenshot-on-failure.
   `Select(driver.find_element(...))` to choose "Wednesday" and assert the
   selected option text.
 
-![Hands-On 6 Task 2 — parameterised suite, 5 passed](screenshots/ho6_t2_pytest_parametrized_run.png)
+<img width="975" height="519" alt="image" src="https://github.com/user-attachments/assets/52406423-9dd2-4f70-a3e3-c11bd614cfb2" />
+
 *Full suite after parameterisation — **5 passed**: `test_simple_form_submission[Hello]`, `[Selenium Automation]`, `[12345]`, plus `test_checkbox_interaction` and `test_dropdown_selection`, each shown individually in the pytest output.*
 
-![Hands-On 6 Task 2 — HTML report generated](screenshots/ho6_t2_html_report.png)
+<img width="975" height="517" alt="image" src="https://github.com/user-attachments/assets/7721a69c-571a-4cce-965c-dd86186d520b" />
+
 *`pytest test_playground.py --html=report.html --self-contained-html` — **5 passed in 27.73s**, `report.html` generated at the project root with pass/fail status and duration per test.*
 
 **Key takeaway:** `scope='function'` gives full test isolation with a fresh
@@ -384,11 +377,13 @@ happen). No `driver.find_element` calls appear in any test file.
   'submit')` call would fail, requiring find-and-replace across the entire
   suite. With POM, only the single locator tuple in the page class needs
   updating.
+  
+<img width="975" height="519" alt="image" src="https://github.com/user-attachments/assets/503dff3c-df8e-4cde-9157-373c6dabb2d5" />
 
-![Hands-On 7 — POM-based test suite passing](screenshots/ho7_t1_pom_pytest_run.png)
 *`pytest -m pytest -v test_playground_pom.py` — **5 passed in 106.54s**, all tests driven entirely through Page Object methods (`page.enter_message()`, `page.click_submit()`, `page.get_displayed_message()`, etc.) with zero direct `driver.find_element` calls inside the test file.*
 
-![Hands-On 7 — final suite with README and HTML report](screenshots/ho7_t2_readme_final_report.png)
+<img width="975" height="519" alt="image" src="https://github.com/user-attachments/assets/a10db9b8-39eb-4d09-ab09-592cdf43cc35" />
+
 *Final `tests/` suite run as `pytest tests/ -v --html=report.html --self-contained-html` — **5 passed in 102.52s**, `report.html` generated, and `Readme.md` documenting the POM maintainability rationale (locator-change resilience) alongside the passing test list (`test_checkbox_interaction`, `test_dropdown_selection`, `test_simple_form_submission[Hello]`, `[Selenium Automation]`, `[12345]`).*
 
 **Key takeaway:** POM is the single highest-leverage pattern in Selenium
@@ -451,3 +446,6 @@ webdriver-manager
 - **Page Object Model** turns a fragile script into a maintainable suite —
   when the UI changes, one locator in one page class gets updated instead
   of every test file that touches that element.
+
+
+## Submission By : KALIKIRI VAISHNAVI
