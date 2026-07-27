@@ -6,7 +6,7 @@
 ## 📁 Project Structure
 
 ```
-PythonBackendFrameworks/<YourName>/
+PythonBackendFrameworks
 ├── handson_01/      (Web Framework Foundations & Django Setup)
 ├── handson_02/      (Django Models, ORM & Admin)
 ├── handson_03/      (Django REST Views, ViewSets & Routers)
@@ -35,7 +35,7 @@ application. The same system is built three times — once each in **Django**, *
 
 ---
 
-## Hands-On 1 — Web Framework Foundations & Django Project Setup *(Beginner)*
+## Hands-On 1 — Web Framework Foundations & Django Project Setup 
 
 **Topics:** Web Framework Concepts · MVC/MVT Pattern · Request-Response Cycle · WSGI vs ASGI ·
 Django Project Setup · URL Routing & Middleware
@@ -58,7 +58,7 @@ wired it to `/api/hello/` in `urls.py`.
 
 ---
 
-## Hands-On 2 — Django Models, ORM & Admin Interface *(Beginner)*
+## Hands-On 2 — Django Models, ORM & Admin Interface
 
 **Topics:** Django Models · Field Types & Constraints · Migrations · Django ORM Queries · Admin
 Interface Registration
@@ -77,10 +77,12 @@ expected results; the admin interface supports search/filter and rejects duplica
 
 **Output Screenshots:**
 
+<img width="1918" height="1015" alt="Screenshot 2026-07-01 180708" src="https://github.com/user-attachments/assets/35975352-f6bc-43c8-890a-11ced7e99ea2" />
+
 
 ---
 
-## Hands-On 3 — Django REST Views, URL Routing & Forms *(Beginner)*
+## Hands-On 3 — Django REST Views, URL Routing & Forms 
 
 **Topics:** Function-Based Views (FBV) · Class-Based Views (CBV) · URL Routing with `include()` ·
 Django REST Framework (DRF) Basics · Serializers · Request & Response Objects
@@ -111,7 +113,7 @@ custom `/students/` action returns the correctly filtered list of enrolled stude
 
 ---
 
-## Hands-On 4 — Flask: App Structure, Routing, Jinja2 & Blueprints *(Intermediate)*
+## Hands-On 4 — Flask: App Structure, Routing, Jinja2 & Blueprints 
 
 **Topics:** Flask App Structure · Routing & URL Rules · Jinja2 Templates · Request & Response
 Objects · Blueprints for Modular Design · Flask Configuration
@@ -141,7 +143,7 @@ descriptive message; unknown course IDs return 404.
 
 ---
 
-## Hands-On 5 — Flask with SQLAlchemy ORM & Database Integration *(Intermediate)*
+## Hands-On 5 — Flask with SQLAlchemy ORM & Database Integration 
 
 **Topics:** Flask-SQLAlchemy Setup · Model Definition · Migrations with Flask-Migrate · ORM CRUD
 Operations · Relationship Queries · Connection Pooling
@@ -162,7 +164,7 @@ the database; the `/students/` route returns the correct enrolled students via a
 
 ---
 
-## Hands-On 6 — FastAPI: Path Parameters, Pydantic & Async Endpoints *(Intermediate)*
+## Hands-On 6 — FastAPI: Path Parameters, Pydantic & Async Endpoints 
 
 **Topics:** FastAPI Project Setup · Path & Query Parameters · Pydantic Models for Validation ·
 Async/Await in FastAPI · Automatic OpenAPI/Swagger Docs · Response Models
@@ -185,7 +187,7 @@ field-level errors; `GET /api/courses/?skip=&limit=` returns the correctly pagin
 
 ---
 
-## Hands-On 7 — FastAPI: Dependency Injection, CRUD & OpenAPI Documentation *(Intermediate)*
+## Hands-On 7 — FastAPI: Dependency Injection, CRUD & OpenAPI Documentation 
 
 **Topics:** FastAPI Dependency Injection · CRUD Operations · Response Models & Status Codes ·
 Background Tasks · OpenAPI Customisation · Error Handling with `HTTPException`
@@ -209,7 +211,7 @@ console; `/docs` shows grouped, well-documented endpoints.
 
 ---
 
-## Hands-On 8 — RESTful API Design Best Practices *(Advanced)*
+## Hands-On 8 — RESTful API Design Best Practices 
 
 **Topics:** REST Principles · HTTP Methods & Status Codes · Resource Naming Conventions · API
 Versioning · Pagination & Filtering · Error Response Standards
@@ -232,7 +234,7 @@ envelope; all error responses follow the standardised format.
 
 ---
 
-## Hands-On 9 — Authentication & Security: JWT, OAuth2 & OWASP *(Advanced)*
+## Hands-On 9 — Authentication & Security: JWT, OAuth2 & OWASP
 
 **Topics:** JWT Token Structure · Token-Based Auth vs Session-Based Auth · Password Hashing with
 bcrypt · OAuth2 Flow (concept) · CORS Configuration · OWASP Top 10 Awareness
@@ -259,7 +261,7 @@ login implemented here.
 
 ---
 
-## Hands-On 10 — Microservices Architecture: Concepts & Decomposition *(Advanced)*
+## Hands-On 10 — Microservices Architecture: Concepts & Decomposition 
 
 **Topics:** Monolith vs Microservices · Service Decomposition · Inter-Service Communication · API
 Gateway Pattern · Service Discovery (concept)
