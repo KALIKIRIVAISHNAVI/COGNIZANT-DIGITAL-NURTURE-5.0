@@ -158,6 +158,8 @@ the database; the `/students/` route returns the correct enrolled students via a
 
 **Output Screenshots:**
 
+<img width="1864" height="843" alt="image" src="https://github.com/user-attachments/assets/bdb75485-9113-4566-baae-14b3a38cdde2" />
+
 ---
 
 ## Hands-On 6 — FastAPI: Path Parameters, Pydantic & Async Endpoints *(Intermediate)*
@@ -178,6 +180,8 @@ dependency.
 field-level errors; `GET /api/courses/?skip=&limit=` returns the correctly paginated subset.
 
 **Output Screenshots:**
+
+<img width="1664" height="945" alt="image" src="https://github.com/user-attachments/assets/0d70e43b-85a7-43a0-a479-30186f42e127" />
 
 ---
 
@@ -222,7 +226,9 @@ single `{'error': {'code', 'message', 'field'}}` shape.
 envelope; all error responses follow the standardised format.
 
 **Output Screenshots:**
+<img width="1907" height="825" alt="image" src="https://github.com/user-attachments/assets/24d31b03-b816-4b54-a108-c2b997486b58" />
 
+<img width="1647" height="955" alt="image" src="https://github.com/user-attachments/assets/1c1c5358-dcea-4552-a616-05b2b427de52" />
 
 ---
 
@@ -274,6 +280,9 @@ Service; stopping Course Service causes the enrollment endpoint to return 503.
 
 **Output Screenshots:**
 
+<img width="1339" height="1175" alt="image" src="https://github.com/user-attachments/assets/d77f1246-1b30-496c-8a11-cac39dc5f158" />
+
+<img width="1862" height="845" alt="image" src="https://github.com/user-attachments/assets/72efb0bb-8ff6-4bf7-99cb-d062167d61dd" />
 
 ---
 
